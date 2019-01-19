@@ -1,0 +1,18 @@
+vim 慢慢总结..
+
+1. 查找:/    按n到下一个
+2. 跳转: 往前跳到t位置:f t ；往后 F 
+	跳两个t: f t ;
+3. dd // delete a line
+3'.  diw : delete a word 
+3''. dw
+4. insert : i;a;o;O
+5. undo/redo : u  ; <C - r> (Ctrl + r) 
+6. save & leave : ZZ or :wq
+6'. :q! force to leave
+7. N G : 到第N 行 或 :N 
+7' gg 第一行 G 最后一行
+8.单词: w:下一个单词开头  e:下一个单词结尾
+9. 块操作: <C-v> start  [ESC] apply
+10. 一行开始 0  or ^ 
+
