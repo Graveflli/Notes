@@ -15,4 +15,4 @@ vim 慢慢总结..
 8.单词: w:下一个单词开头  e:下一个单词结尾
 9. 块操作: <C-v> start  [ESC] apply
 10. 一行开始 0  or ^ 
-11.在行末尾insert : A
+11.在行末尾insert : A  
