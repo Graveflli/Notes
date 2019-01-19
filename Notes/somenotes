@@ -5,4 +5,15 @@
 
  2.设置vim tab键空格数 : set tabstop=4
 
+2'.更改/etc/vimrc : set tabstop=4
+                    set shiftwidth=4
+
+3.man grep | cat | head -n 10 // 显示最前面10行
+  man grep | echo   --wrong
+  man grep | cat | tail -n +10 | head -n 20 // 先取10行之后的内容  后在此取前20行
+  man grep | cat | head -n 30 | tail -n +20 // 先取前30行的内容 后在此基础上从第20行开始取 -> 20-30行 
+  tail -n 10 :显示最后10行
+  tail -n +10 :从10行开始显示,显示10行之后的
+  head -n 10 :显示前面10行
+  man cat | cat | tail -n +10 | head -n 20  等价于 man cat | cat | head -n 30 | tail -n +10
 
