@@ -1,0 +1,6 @@
+遇到的c/c++的一些地方:
+
+1.指针遍历数组:
+	企图通过到达空指针遍历:while(!(*a++)) / while(a != nullptr) / while(*a != 0) ...不大对
+	用一个变量记录数组长度 ..可以
+2.*p;  p = &a or p = a  ...which is better?
