@@ -6,3 +6,5 @@
 2.*p;  p = &a or p = a  ...which is better?
 
 2'. 用for(int i = 0; i < N; ++i)scanf a[i] 之后想用指针遍历数组 ..wrong 此方法输入的内容地址不连续
+
+3.segmentation falut (core dumped)  :  scanf without & ..
