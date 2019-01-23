@@ -1,0 +1,11 @@
+from ghlin:
+(1)
+	make a dir name XXX.json(XXX is name you named) as proxy, in /etc/shadowsocksrr(mkdir if it doesn't exist)
+    write your ssr's config in that proxy.json 
+    
+    use sudo systemctl start shadowsocksrr-libev@XXX (XXX is proxy if your json names proxy.json)
+    systemctl enable   
+	systemctl disable
+	systemctl stop
+
+(2) use node..  I will ask g later
