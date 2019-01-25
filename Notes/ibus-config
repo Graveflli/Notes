@@ -1,0 +1,5 @@
+使用fcitx输入法在manjaro上崩了..换成了ibus
+
+1.archwiki 上的输入法引擎都使用过 ibus-rime and ibus-chewing 不能用 ibus-libpinyin 还可以用
+2.配置系统设置：language : Chinese as default & format use Chinese
+
