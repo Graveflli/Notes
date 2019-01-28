@@ -72,4 +72,66 @@ UPGRADE vim-plug itself:
 
 	使用 Vim-plug 管理插件并不难。它简化了插件管理。现在去找出你最喜欢的插件并使用 Vim-plug 来安装它们。
 
+------------------------------------------
+------------------------------------------
+From ghlin:
+
+	Plug 'kana/vim-textobj-user'
+	Plug 'sgur/cim-textobj-parameter'
+	Plug 'vim-scripts/swap-parameters'
+	Plug 'tpope/vim-surround'
+
+这三个是最常用的
+
+(第一个是第二个的依赖,所以只算后三个)
+
+第一个(textobj) 允许你把参数作为textobject (比如  dia 删除一个参数)
+
+swap-parameters可以交换两个参数
+
+最后一个处理括号的,比如
+viw   选中一个词
+S(     把选中的词用()包围起来
+
+其他的插件都可以不用
+
+
+------------------------------------------
+I:有没有补全单词之类的?
+
+G:
+Ctrl+N/P
+
+再具体的补全用Ctrl+X前缀
+
+比如Ctrl+X Ctrl+F 补全路径
+
+Ctrl+X Ctrl+L补全整行
+
+之类的
+
+path选项额外决定从哪里提供补全单词的来源
+
+(好像不是path,是incpath?
+
+incsearch
+
+不是
+
+好像就是path
+
+
+I:
+啊？那把常用单词放一起？
+
+G: 
+vim有字典补全,
+
+Ctrl+X Ctrl+K,自己提供字典
+
+(没用过这功能
+
+
+
+
 
