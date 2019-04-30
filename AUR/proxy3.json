@@ -1,0 +1,20 @@
+{
+	
+            "remarks": "\u4fc4\u7f57\u65af\u4f2f\u529b1|50M|\u79d1\u5b66\u4e0a\u7f51",
+            "server": "jp2.twobee.bid",
+            "server_port": 11927,
+	    "local_address": "127.0.0.1",
+	    "local_port": 1080,
+            "method": "chacha20",
+            "obfs": "tls1.2_ticket_auth",
+            "obfsparam": "",
+            "remarks_base64": "5L+E572X5pav5Lyv5YqbMXw1ME1856eR5a2m5LiK572R",
+            "password": "2prxEW",
+            "tcp_over_udp": false,
+            "udp_over_tcp": false,
+            "group": "TwoBee",
+            "protocol": "auth_aes128_md5",
+            "protoparam": "",
+            "obfs_udp": false,
+            "enable": true
+}
