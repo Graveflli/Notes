@@ -1,0 +1,23 @@
+yay -Si electron-ssr
+yay -S electron-ssr
+yay -S electron-ssr --noconfirm
+
+此ssr用法跟windows上一样
+
+others:
+	配置~/.zshrc 使得终端里可以使用proxy:
+	 97 alias proxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+	 98 alias unproxy="unset ALL_PROXY"
+	 100 export PATH=$PATH:/home/master/.local/bin
+	检测可否在终端使用：
+		curl ip.cn
+		curl ip.gs 
+		proxy
+		curl ip.gs
+	但我用systemctl 使用shadowsocksrr-libev@proxy好像也可以在终端使用hhh
+
+我只在zshrc里放了个fortune | cowsay -f ... | lolcat
+
+wtf ssh
+
+
