@@ -19,3 +19,48 @@ shadowsocksrr-libev  / electron-ssr
 
 配置terminator vim 可以自己加插件(杨氏极度推崇emacs paul写的他拿过去改了)
 
+截图：deepin-screenshot ”深度截图“
+	用deepin系的东西还挺多，看到都有deepin-terminal了
+其他的截屏工具(没用过）：
+	$ sudo pacman -S spectacle或
+    $ sudo pacman -S flameshot
+    屏幕录制工具：
+    $ sudo pacman -S peek
+
+
+
+others:
+19、安装终端显示信息neofetch(装b神器,安装screenfetch也可)
+
+$ sudo pacman -S neofetch
+
+23、安装有道词典
+
+$ sudo pacman -S youdao-dict
+24、安装vokoscreen录屏
+
+$ sudo pacman -S vokoscreen
+
+18、配置jdk环境变量
+
+# 配置环境变量
+# sudo vim /etc/profile #编辑文件
+# 在文件末尾处追加下列几行
+export JAVA_HOME=你的jdk解压后的绝对路径 
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export  PATH=${JAVA_HOME}/bin:$PATH
+19、安装终端显示信息neofetch(装b神器,安装screenfetch也可)
+
+$ sudo pacman -S neofetch
+20、安装Tim,微信 (KDE桌面无法使用)
+
+$ sudo pacman -S deepin.com.qq.office deepin.com.wechat
+21、配置微信，tim的中文输入问题 (KDE桌面无法使用)
+
+Tim启动脚本位置：/opt/deepinwine/apps/Deepin-TIM/run.sh WeChat启动脚本位置：/opt/deepinwine/apps/Deepin-WeChat/run.sh # 1 配置tim中文，打开tim启动脚本文件 （微信同理）
+$ sudo vim /opt/deepinwine/apps/Deepin-TIM/run.sh
+# 2 在启动脚本命令之前添加以下内容
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
