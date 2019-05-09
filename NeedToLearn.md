@@ -70,6 +70,7 @@
 30. systemctl disable --now 
 31. watch  
 32. dmesage  -> using watch command to watch this for monitor mercury 网卡
+33. markdown need to learn
 
 ---
 
