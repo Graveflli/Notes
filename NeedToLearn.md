@@ -1,4 +1,4 @@
-mercury portable driver linux:
+## mercury portable driver linux:
 0. neofetch
 1. lspci | grep wl
 1. lsmod | grep wl
@@ -13,16 +13,20 @@ mercury portable driver linux:
 9. pacman -Qi ...
 10. pacman -Qsq linux
 
-Guo: every kernel you have need to use dkms for process the kernel's hearder
+*Guo: every kernel you have need to use dkms for process the kernel's hearder*
 
-yay:
+---
+
+## yay:
 1. yay update
 2. pacman -Ql 
 3. yay -R ...
 
-ydcv/crow:
-# ydcv can't use these days, and we can go to github to see that Readme.md to connect youdao's API
-# when ydcv can't use, Ghlin using some command to find the replace software:
+---
+
+## ydcv/crow:
+*ydcv can't use these days, and we can go to github to see that Readme.md to connect youdao's API*
+*when ydcv can't use, Ghlin using some command to find the replace software:*
 1. yay -Ss google trans   ->  find trans_package that uses google's API -> find crow
 2. yay -S crow-translate
 3. pacman -Ql crow-translate | grep bin   ->   to find the executable files XXX which is ...bin/XXX
@@ -31,7 +35,9 @@ ydcv/crow:
 6. Mine its Chinese and he says my default language is that
 7. we can use the parameter in tail : crow 你好 -t en    rather  crow -t zh-CN haha
 
-other issus remember to solve:
+---
+
+## other issus remember to solve:
 1. htop
 2. bpython
 3. nmap
@@ -64,5 +70,14 @@ other issus remember to solve:
 30. systemctl disable --now 
 31. watch  
 32. dmesage  -> using watch command to watch this for monitor mercury 网卡
+
+---
+
+## some study:
+- 林轩田
+- 吴恩达 ai for everyone
+- coursera : nodejs + mongoDB + express
+- SICP
+- haskell long hair man in youtube 
 
 
