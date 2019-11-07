@@ -1,0 +1,77 @@
+tmux
+
+# I'm using the following code to load neofetch or cowsay randomly hahah
+rand=${RANDOM}
+rand=$((${rand} % 2))
+# echo $rand
+# if [ "${RANDOM} % 2" = "0" ]; then         <- that's the wrong code.. 
+if [ $rand = 0 ]; then 
+	neofetch
+else
+	fortune | cowsay -f flaming-sheep | lolcat;
+fi
+
+source /usr/share/zsh/share/antigen.zsh
+
+antigen use oh-my-zsh
+
+# antigen bundle <<EOBUNDLES
+#     # Bundles from the default repo (robbyrussell's oh-my-zsh)
+#     # git
+# 
+#     # Syntax highlighting bundle.
+#     zsh-users/zsh-syntax-highlighting
+# 
+#     # Fish-like auto suggestions
+#     zsh-users/zsh-autosuggestions
+# 
+#     # Extra zsh completions
+#     zsh-users/zsh-completions
+# 
+# EOBUNDLES
+antigen bundle git
+antigen bundle pip
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+
+antigen theme robbyrussell
+antigen apply
+
+
+#ZSH_THEME="robbyrussell"
+#HIST_STAMPS="mm/dd/yyyy"
+
+# plugins=(
+#   git
+#   extract
+#   zsh-autosuggestions
+#   autojump
+# )
+
+# zsh-autosuggestions 补全from -> to ';'
+bindkey ';' autosuggest-accept
+
+#add 环境变量？？
+[[ -s /home/master/.autojump/etc/profile.d/autojump.sh ]] && source /home/master/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
+#jj from jj
+jj(){
+	if [ $#@ -eq 0 ]; then
+		cd `cat ${HOME}/.local/share/autojump/autojump.txt | cut -f 2 | fzf`
+	else
+		j $@
+	fi
+}
+
+
+#source $ZSH/oh-my-zsh.sh
+alias proxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias unproxy="unset ALL_PROXY"
+alias yd="ydcv"
+alias vim="nvim"
+alias vi="nvim"
+# alias pacman="sudo pacman"
+
+export PATH=$PATH:/home/master/.local/bin
